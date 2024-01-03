@@ -61,7 +61,7 @@ def impute_all():
         if df2[i].isna().sum()>0:
             d.append(i)
     else:
-        print("Suthara hai bhenchod: ",i,"\s",df2[i].isna().sum())
+        print("Looks good: ",i,"\s",df2[i].isna().sum())
     for i in d:
         if (df2[i].dtype == 'int64') or (df2[i].dtype == 'float64'):
             df2[i]=df2[i].fillna(df2[i].median())
