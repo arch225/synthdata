@@ -5,6 +5,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+https://github.com/codebasics/py/blob/master/ML/17_knn_classification/knn_classification_tutorial.ipynb
+
 # Sample DataFrame
 data = {'value': [10, 15, 20, 25, 30, 35],
         'indicator': ['A', 'B', 'A', 'B', 'A', 'B']}
