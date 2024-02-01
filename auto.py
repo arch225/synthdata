@@ -6,6 +6,21 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 https://github.com/codebasics/py/blob/master/ML/17_knn_classification/knn_classification_tutorial.ipynb
+import pandas as pd
+
+# Sample DataFrame with a categorical variable
+data = {'Category': ['A', 'B', 'C', 'A', 'C', 'B']}
+df = pd.DataFrame(data)
+
+# One-hot encoding using get_dummies
+one_hot_encoded = pd.get_dummies(df['Category'], prefix='Category')
+
+# Concatenate the one-hot encoded columns to the original DataFrame
+df_encoded = pd.concat([df, one_hot_encoded], axis=1)
+
+# Display the updated DataFrame with one-hot encoding
+print(df_encoded)
+
 
 # Sample DataFrame
 data = {'value': [10, 15, 20, 25, 30, 35],
